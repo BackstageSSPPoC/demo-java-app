@@ -54,7 +54,6 @@ pipeline {
                     mvn sonar:sonar \
                       -Dsonar.projectKey=${APP_NAME} \
                       -Dsonar.sources=src/main/java \
-                      // -Dsonar.tests=src/test/java
                     '''
                 }
             }
