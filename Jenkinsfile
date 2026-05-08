@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven3'   
+    }
+
     environment {
         APP_NAME = "demo-java-app".toLowerCase().trim()
         DOCKER_IMAGE = "chaitanyapandeygspann/${APP_NAME}"
